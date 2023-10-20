@@ -28,29 +28,39 @@ while True:
 
     try:
         number_1 = int(upper_input)
+        
         if number_1 > min_value:
+            
             break
 
         else:
+           
             print(f"{yellow}\nInput must be greater than {str(min_value)}{reset_color}")
     
     except ValueError:
+        
         print(f"{red}\nInvalid input. Please enter a valid number.{reset_color}")
 
 print(f"{green}\nValid input: {str(number_1)}{reset_color}")
 
 while True:
+    
     lower_input = input(f"\nEnter a number < {str(max_value)}: ")
 
     try:
+        
         number_2 = int(lower_input)
+        
         if number_2 < max_value:
+           
             break
 
         else:
+           
             print(f"{yellow}\nInput must be less than {str(max_value)}{reset_color}")
 
     except ValueError:
+       
         print(f"{red}\nInvalid input. Please enter a valid number.{reset_color}")
     
 print(f"\n{green}Valid input: {str(number_2)}{reset_color}")
