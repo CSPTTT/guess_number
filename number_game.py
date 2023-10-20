@@ -1,7 +1,7 @@
 import random
-#Allows us to use the random action to choose 'random'
+
 import math
-#Allows us to use math fn that we have to import into py
+
 red = "\u001b[31m"
 
 green = "\u001b[32m"
@@ -15,9 +15,9 @@ orange = "\u001b[38m"
 reset_color = "\u001b[0m"
 
 name = input("\nHi, what is your name? ")
-#Asks the user what their name is
+
 print(f"\nHi, {name}. Let's begin!")
-#Greets host and starts fn
+
 min_value = 1000
 
 max_value = 100
@@ -56,13 +56,13 @@ while True:
 print(f"\n{green}Valid input: {str(number_2)}{reset_color}")
 
 upperbound = int(number_1)
-#Turns upper input into an integer
+
 lowerbound = int(number_2)
-#Turns lower input into an integer
+
 minimum_number_of_guessing = 1 + math.log2(upperbound - lowerbound + 1)
-#Calculates the minimum amount of guesses it takes to get the right answer based on bounds given and stores in variable
+
 rounded_up = math.ceil(minimum_number_of_guessing)
-#Rounds up the calculation to a whole number
+
 rounded_up_number = str (rounded_up)
 
 selection = print(f"\n{cyan}I have selected a magic number between {red}{str(number_2)}{cyan} and {red}{str(number_1)}{cyan}.{reset_color}")
